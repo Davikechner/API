@@ -20,7 +20,7 @@ app.get("/ufs", (req, res) => {
     }
 });
 
-// Rota para buscar por ID
+
 app.get("/ufs/id/:iduf", (req, res) => {
     const id = parseInt(req.params.iduf);
 
@@ -37,7 +37,7 @@ app.get("/ufs/id/:iduf", (req, res) => {
     }
 });
 
-// Rota para buscar por sigla (UF)
+
 app.get("/ufs/sigla/:sigla", (req, res) => {
     const sigla = req.params.sigla;
 
@@ -50,7 +50,7 @@ app.get("/ufs/sigla/:sigla", (req, res) => {
     }
 });
 
-// Inicializando o servidor
+
 app.listen(PORT, () => {
     console.log(`🚀 Servidor rodando na porta ${PORT} - ${new Date().toLocaleString()}`);
 });
